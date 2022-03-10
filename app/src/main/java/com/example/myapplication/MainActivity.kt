@@ -64,13 +64,6 @@ class MainActivity : AppCompatActivity() {
     fun getOperator(view: View){
         val button = view as Button
         operator = button.text.get(0)
-/*        operator = when (button.id){
-            binding.buttonDivision.id -> {'/'}
-            binding.buttonMultiplicacion.id -> {'*'}
-            binding.buttonSuma.id -> {'+'}
-            binding.buttonResta.id -> {'-'}
-            else -> {'0'}
-        }*/
         firstValue = binding.editTextNumber.text.toString().toDouble()
         binding.editTextNumber.text.clear()
 
